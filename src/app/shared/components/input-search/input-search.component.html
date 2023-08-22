@@ -1,0 +1,4 @@
+<span class="p-input-icon-left">
+  <i [ngClass]="(loading)? 'pi pi-spin pi-spinner': 'pi pi-search'"></i>
+  <input pInputText type="text" class="p-inputtext-sm" placeholder="Search" [(ngModel)]="valueSearch" (input)="changeSearch($event)"  (keyup.enter)="keypressEnter()"/>
+</span>

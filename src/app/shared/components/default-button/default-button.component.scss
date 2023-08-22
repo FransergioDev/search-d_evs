@@ -1,0 +1,12 @@
+@import "../../../vars.scss";
+
+.p-button {
+  background: $secondary;
+  border-color: $secondary;
+  min-width: 13em;
+  font-family: 'Inter';
+  font-size: 0.8em;
+  font-weight: 600;
+  line-height: 12px;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+}

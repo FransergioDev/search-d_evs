@@ -1,0 +1,12 @@
+@import "../../../vars.scss";
+
+.p-inputtext-sm {
+  width: 60vh;
+  font-size: 0.8em;
+  color: $text;
+  border-color: $input;
+}
+
+.p-inputtext.p-inputtext-sm {
+  padding: 0.45625rem 0rem 0.45625rem 2.5rem;
+}
