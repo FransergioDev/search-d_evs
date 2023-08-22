@@ -3,7 +3,7 @@ import { GitUsersService } from './git-users.service';
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 import { environment } from 'src/environment/environment';
 import { GitUser } from '../../models/GitUser';
-import { UserResponseDefault } from '../../models/UserResponseDefault';
+import { GitResponseDefault } from '../../models/GitResponseDefault';
 
 const apiURL = environment.githubUrlBase;
 
@@ -63,7 +63,7 @@ describe('GitUsersService', () => {
   it('it should return default message when github username is not found', () => {
     const userName = '456456465@@#@!#!@#!@';
     const urlEndpoint = `${apiURL}/users/${userName}`;
-    const dummyResponse: UserResponseDefault = {
+    const dummyResponse: GitResponseDefault = {
       message: "Not Found",
       documentation_url: "https://docs.github.com/rest/users/users#get-a-user"
     };

@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
 import { environment } from 'src/environment/environment';
 import { Observable } from 'rxjs';
 import { GitUser } from '../../models/GitUser';
-import { UserResponseDefault } from '../../models/UserResponseDefault';
+import { GitResponseDefault } from '../../models/GitResponseDefault';
 
 
 @Injectable({
@@ -15,10 +15,8 @@ export class GitUsersService {
 
   constructor(private http: HttpClient) { }
 
-  getUser(userName: String): Observable<GitUser|UserResponseDefault> {
-    console.log('api',this.apiUrl);
+  getUser(userName: String): Observable<GitUser|GitResponseDefault> {
     const url = `${this.apiUrl}/users/${userName}`;
-    console.log('api url',url);
-    return this.http.get<GitUser|UserResponseDefault>(url);
+    return this.http.get<GitUser|GitResponseDefault>(url);
   }
 }

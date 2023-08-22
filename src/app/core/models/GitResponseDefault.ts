@@ -1,4 +1,4 @@
-export interface UserResponseDefault {
+export interface GitResponseDefault {
   message: String,
   documentation_url?: String
 }
