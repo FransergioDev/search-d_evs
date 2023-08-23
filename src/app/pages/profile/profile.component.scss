@@ -1,0 +1,28 @@
+@import "../../vars.scss";
+
+.container {
+  padding-left: 5em;
+  padding-right: 5em;
+
+  & .boxProfile {
+    display: flex;
+    flex-direction: row;
+
+    & .boxProfileDetails, .boxProfileRepositories {
+      padding-top: 10%;
+    }
+
+    & .boxProfileRepositories {
+      padding-left: 3em;
+    }
+  }
+
+  & .notFoundProfile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70vh;
+    color: $secondary;
+  }
+}

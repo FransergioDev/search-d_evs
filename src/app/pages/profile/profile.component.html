@@ -1,1 +1,12 @@
-<p>profile works!</p>
+<ng-container>
+  <div class="container">
+    <app-header [userNameForSearch]="userNameForSearch"/>
+    <div class="boxProfile" *ngIf="user; else notFoundProfile">
+      <app-profile-details [user]="user" class="boxProfileDetails" (eventClickContact)="eventClickContact()"/>
+      <app-repositories class="boxProfileRepositories"/>
+    </div>
+  </div>
+  <ng-template #notFoundProfile>
+    <h3 class="notFoundProfile">Perfil não localizado!</h3>
+  </ng-template>
+</ng-container>

@@ -1,0 +1,20 @@
+header {
+  width: 100%;
+  padding: 1em 0 1em 0;
+  position: relative;
+  display: inline-flex;
+
+  .titleHeader, .boxInputSearch {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+  }
+
+  .titleHeader {
+    width: 30vh;
+    font-size: 1.4em;
+  }
+  .boxInputSearch {
+    margin-top: 1.0em;
+  }
+}

@@ -7,12 +7,18 @@ import { InputTextModule } from 'primeng/inputtext';
 import { TitleTextComponent } from './components/title-text/title-text.component';
 import { InputSearchComponent } from './components/input-search/input-search.component';
 import { DefaultButtonComponent } from './components/default-button/default-button.component';
+import { HeaderComponent } from './components/header/header.component';
+import { ProfileDetailsComponent } from './components/profile-details/profile-details.component';
+import { RepositoriesComponent } from './components/repositories/repositories.component';
 
 @NgModule({
   declarations: [
+    HeaderComponent,
+    ProfileDetailsComponent,
     TitleTextComponent,
     InputSearchComponent,
     DefaultButtonComponent,
+    RepositoriesComponent
   ],
   imports: [
     CommonModule,
@@ -21,8 +27,11 @@ import { DefaultButtonComponent } from './components/default-button/default-butt
     InputTextModule
   ],
   exports: [
+    HeaderComponent,
+    ProfileDetailsComponent,
     TitleTextComponent,
     InputSearchComponent,
+    RepositoriesComponent,
     DefaultButtonComponent,
   ]
 })

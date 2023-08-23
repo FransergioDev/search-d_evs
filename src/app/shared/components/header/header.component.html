@@ -1,0 +1,6 @@
+<header>
+  <app-title-text [main]="mainTitle" [secondary]="secondaryTitle" class="titleHeader"></app-title-text>
+  <div class="boxInputSearch">
+    <app-input-search class="input-search" (search)="changeUserNameForSearch($event)" (eventEnter)="navigateForSearchProfile(userNameForSearch)" [valueSearch]="userNameForSearch"/>
+  </div>
+</header>

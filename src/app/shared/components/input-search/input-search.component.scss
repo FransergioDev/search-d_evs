@@ -10,3 +10,10 @@
 .p-inputtext.p-inputtext-sm {
   padding: 0.45625rem 0rem 0.45625rem 2.5rem;
 }
+
+.p-inputtext.p-inputtext-sm:active, .p-inputtext.p-inputtext-sm:focus {
+  outline: none;
+  box-shadow: none;
+  border: 0.2em solid;
+  border-color: $secondary;
+}

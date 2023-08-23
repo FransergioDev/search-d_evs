@@ -1,0 +1,28 @@
+<ng-container>
+  <div class="boxDetailsProfile">
+    <div *ngIf="user" class="boxUser">
+      <div class="boxDetailsHeader">
+        <img src={{user.avatar_url}}/>
+        <div>
+          <h6>{{ user.name }}</h6>
+          <span class="atSign">@{{ user.login }}</span>
+        </div>
+      </div>
+      <p class="bio">{{ user.bio }}</p>
+
+      <p><i class="pi pi-users icon"></i>{{user.followers}} seguidores</p>
+      <p><i class="pi pi-heart icon"></i>{{user.following}} seguindo</p>
+      <br/>
+
+      <p *ngIf="user.company"><i class="pi pi-building icon"></i>{{user.company}}</p>
+      <p *ngIf="user.location"><i class="pi pi-map-marker icon"></i>{{user.location}}</p>
+      <p *ngIf="user.email"><i class="pi pi-envelope icon"></i>{{user.email}}</p>
+      <p *ngIf="user.blog"><i class="pi pi-paperclip icon"></i>{{user.blog}}</p>
+      <p *ngIf="user.twitter_username"><i class="pi pi-twitter icon"></i>{{user.twitter_username}}</p>
+
+      <app-default-button label="Contato" class="btnContact" (eventClick)="eventClick()" *ngIf="user.html_url"></app-default-button>
+    </div>
+  </div>
+</ng-container>
+
+

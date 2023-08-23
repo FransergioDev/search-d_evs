@@ -1,17 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { environment } from 'src/environment/environment';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  selector: 'app-header',
+  templateUrl: './header.component.html',
+  styleUrls: ['./header.component.scss']
 })
-export class HomeComponent implements OnInit {
+export class HeaderComponent implements OnInit {
   private title = environment.projectName;
+
+  @Input() userNameForSearch: String = "";
+
   public mainTitle: String = "";
   public secondaryTitle: String = ""
-  public userNameForSearch: String = "";
 
   constructor(private router: Router) {}
 
