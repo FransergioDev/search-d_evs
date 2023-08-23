@@ -1,10 +1,22 @@
 # SearchDEvs
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.0.
+## Technologies used
+
+- [Angular 16](https://angular.io/) version 16.2.0
+- [Angular CLI](https://github.com/angular/angular-cli) version 16.2.0.
+- [PrimeNG](https://primeng.org/) version 16.2.0
+- [Node 18](https://nodejs.dev) version 18.17.1
+- [SASS](https://sass-lang.com/)
+
+## Architecture used
+  - src/app/core: Essential files for the application;
+  - src/app/pages: Application pages
+  - src/app/shared: where will be the Dumb Components, which are components that do nothing on their own and that I used in one or more components;
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Run `ng serve` for a dev server. 
+Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
