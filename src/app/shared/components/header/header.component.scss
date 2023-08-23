@@ -12,9 +12,29 @@ header {
 
   .titleHeader {
     width: 30vh;
-    font-size: 1.4em;
+    margin-top: -0.45em;
+    font-size: 32px;
   }
   .boxInputSearch {
     margin-top: 1.0em;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  header {
+    padding: 0;
+    text-align: center;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+
+    .titleHeader {
+      width: 20vh;
+      margin-bottom: -0.9em;
+    }
+
+    .boxInputSearch {
+      padding-bottom: 2em;
+    }
   }
 }

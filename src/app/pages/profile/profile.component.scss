@@ -28,3 +28,37 @@
     color: $secondary;
   }
 }
+
+
+@media screen and (max-width: 426px) {
+  .container {
+    width: 100%;
+    padding-left: 2em;
+    padding-right: 2em;
+    overflow-x: hidden;
+
+    & .boxProfile {
+      display: block;
+
+      & .boxProfileDetails, .boxProfileRepositories {
+        width: 80vh;
+        align-items: center;
+        justify-content: center;
+      }
+
+      & .boxProfileRepositories {
+        padding-left: 0;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 426px) and (max-width: 1300px) {
+  .container {
+    width: 100%;
+    padding-left: 2em;
+    padding-right: 2em;
+    overflow-x: hidden;
+
+  }
+}

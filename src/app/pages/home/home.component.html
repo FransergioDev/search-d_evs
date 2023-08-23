@@ -2,8 +2,8 @@
   <div class="boxSearch">
     <app-title-text [main]="mainTitle" [secondary]="secondaryTitle" class="titleHome"></app-title-text>
     <div class="boxInputSearch">
-      <app-input-search class="input-search" (search)="changeUserNameForSearch($event)" (eventEnter)="navigateForSearchProfile(userNameForSearch)"/>
-      <app-default-button label="Search" (eventClick)="navigateForSearchProfile(userNameForSearch)"/>
+      <app-input-search class="inputSearch" (search)="changeUserNameForSearch($event)" (eventEnter)="navigateForSearchProfile(userNameForSearch)"/>
+      <app-default-button label="Search" (eventClick)="navigateForSearchProfile(userNameForSearch)" class="btnSearch"/>
     </div>
   </div>
 </section>

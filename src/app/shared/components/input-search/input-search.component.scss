@@ -17,3 +17,32 @@
   border: 0.2em solid;
   border-color: $secondary;
 }
+
+@media screen and (max-width: 320px) {
+  .p-inputtext-sm {
+    width: 45vh;
+    max-width: 250px;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 475px) {
+  .p-inputtext-sm {
+    width: 45vh;
+    max-width: 300px;
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 426px) {
+  .p-inputtext-sm {
+    width: 45vh;
+    max-width: 345px;
+  }
+}
+
+
+@media screen and (min-width: 426px) and (max-width: 1300px) {
+  .p-inputtext-sm {
+    width: 45vh;
+    max-width: 350px;
+  }
+}
