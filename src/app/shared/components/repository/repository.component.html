@@ -1,1 +1,14 @@
-<p>repository works!</p>
+<div class="boxRepository">
+  <h4>{{repository?.name }}</h4>
+  <div class="repoDetails">
+    <p>{{repository?.description}}</p>
+    <span>
+      <i class="pi pi-star"></i>{{repository?.stargazers_count}}
+    </span>
+    <p class="infoLastUpdate">
+      <i class="pi pi-circle-fill icon-update-repo"></i>
+      <span>{{calculateLastUpdate(repository?.updated_at)}}</span>
+    </p>
+  </div>
+</div>
+<p-divider></p-divider>

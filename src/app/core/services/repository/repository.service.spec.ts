@@ -56,7 +56,7 @@ describe('RepositoryService', () => {
       }
     ];
 
-    service.getRepositorysByUserName(userName).subscribe(response => {
+    service.getRepositoriesByUserName(userName).subscribe(response => {
       expect(response).toEqual(dummyResponse);
     });
 
@@ -73,7 +73,7 @@ describe('RepositoryService', () => {
       documentation_url: "https://docs.github.com/rest/repos/repos#list-repositories-for-a-user"
     };
 
-    service.getRepositorysByUserName(userName).subscribe(response => {
+    service.getRepositoriesByUserName(userName).subscribe(response => {
       expect(response).toEqual(dummyResponse);
     });
 

@@ -3,6 +3,7 @@ import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { ButtonModule } from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
+import { DividerModule } from 'primeng/divider';
 
 import { TitleTextComponent } from './components/title-text/title-text.component';
 import { InputSearchComponent } from './components/input-search/input-search.component';
@@ -10,6 +11,7 @@ import { DefaultButtonComponent } from './components/default-button/default-butt
 import { HeaderComponent } from './components/header/header.component';
 import { ProfileDetailsComponent } from './components/profile-details/profile-details.component';
 import { RepositoriesComponent } from './components/repositories/repositories.component';
+import { RepositoryComponent } from './components/repository/repository.component';
 
 @NgModule({
   declarations: [
@@ -18,13 +20,15 @@ import { RepositoriesComponent } from './components/repositories/repositories.co
     TitleTextComponent,
     InputSearchComponent,
     DefaultButtonComponent,
-    RepositoriesComponent
+    RepositoriesComponent,
+    RepositoryComponent
   ],
   imports: [
     CommonModule,
     FormsModule,
     ButtonModule,
-    InputTextModule
+    InputTextModule,
+    DividerModule
   ],
   exports: [
     HeaderComponent,

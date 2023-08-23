@@ -1,3 +1,5 @@
+@import "../../../vars.scss";
+
 .boxDetailsProfile {
   width: 25vh;
   font-family: 'Inter';
@@ -34,7 +36,7 @@
 
   & p {
     font-size: 0.95em;
-    color: #4A5568;
+    color: $textSecondary;
   }
 
   & p:not(.bio) {

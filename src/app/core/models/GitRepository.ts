@@ -9,7 +9,7 @@ export interface GitRepository {
   description: String;
   fork?: Boolean;
   url?: String;
-  created_at: Date;
-  updated_at: Date;
+  created_at: string;
+  updated_at: string;
   stargazers_count: number;
 }

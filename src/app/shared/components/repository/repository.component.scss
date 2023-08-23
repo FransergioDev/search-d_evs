@@ -1,0 +1,30 @@
+
+
+@import '../../../vars.scss';
+
+.boxRepository {
+  margin-bottom: -1em;
+
+  & .repoDetails {
+    color: $textSecondary;
+
+    & .infoLastUpdate {
+      position: relative;
+      display: inline-flex;
+      padding-left: 1em;
+
+      & .icon-update-repo {
+        font-size: 0.35em;
+        bottom: 0.8em;
+        position: absolute;
+      }
+
+      & span {
+        padding-left: 0.5em;
+      }
+    }
+  }
+}
+
+
+

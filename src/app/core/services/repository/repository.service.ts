@@ -13,7 +13,7 @@ export class RepositoryService {
 
   constructor(private httpClient: HttpClient) { }
 
-  getRepositorysByUserName(userName: String): Observable<GitRepository[]|GitResponseDefault> {
+  getRepositoriesByUserName(userName: String): Observable<GitRepository[]|GitResponseDefault> {
     const url = `${this.apiUrl}/users/${userName}/repos`;
     return this.httpClient.get<GitRepository[]|GitResponseDefault>(url);
   }
