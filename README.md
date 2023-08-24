@@ -1,4 +1,4 @@
-# SearchDEvs
+# SearchDevs
 
 ## Technologies used
 
